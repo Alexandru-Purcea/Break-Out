@@ -11,6 +11,7 @@ html {
 body {
   overflow: hidden;
   height: inherit;
+  background-color: rgb(39, 38, 38);
 }
 
 #canvas {
@@ -22,6 +23,7 @@ body {
   right: 0;
   margin: auto;
   z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #StartGame {
@@ -30,7 +32,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 0px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Vasa_from_port2.jpg/1200px-Vasa_from_port2.jpg);
+  background-image: url(./assets/homeBackground.jpg);
   background-size: cover;
 }
 
@@ -40,8 +42,10 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 0px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Vasa_from_port2.jpg/1200px-Vasa_from_port2.jpg);
+  background-image: url(./assets/homeBackground.jpg);
   background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 #Start {
@@ -60,40 +64,51 @@ body {
 #Restart {
   display: none;
   background-color: #333;
-  width: 30%;
+  width: 90%;
   height: 60px;
   color: white;
-  font-size: 25px;
   margin: auto;
   margin-top: 1%;
   margin-bottom: 1%;
   border-color: rgb(173, 177, 194);
   border-width: 10px;
+  font-size: 4vh;
 }
 
 #NextLvl {
   display: none;
   background-color: #333;
-  width: 30%;
+  width: 90%;
   height: 60px;
   color: white;
-  font-size: 25px;
   margin: auto;
   margin-top: 1%;
   margin-bottom: 1%;
   border-color: rgb(173, 177, 194);
   border-width: 10px;
+  font-size: 4vh;
 }
 
 #Level {
   display: block;
   background-color: #333;
-  width: 30%;
+  width: 90%;
   height: 60px;
   color: white;
-  font-size: 25px;
   margin: auto;
   margin-top: 0.75%;
   border-color: rgb(173, 177, 194);
   border-width: 10px;
+  font-size: 4vh;
+}
+
+#LevelsContainer{
+  align-self: center;
+  justify-self: center;
+  width:  30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90%;
 }

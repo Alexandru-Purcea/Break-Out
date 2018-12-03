@@ -10,19 +10,19 @@ canvas.height = height = window.innerHeight;
 
 
 var img2 = new Image();
-img2.src = 'https://wallpaperscraft.com/image/patterns_background_dark_texture_55277_3840x2400.jpg';
+img2.src = './assets/blackPattern.jpg';
 
 var img3 = new Image();
-img3.src = 'https://opengameart.org/sites/default/files/metalpreview.png';
+img3.src = './assets/metal.png';
 
 var targetImage = new Image();
-targetImage.src = "http://www.trmillermill.com/Specialty%20Photos/Log%20Cabin.jpg";
+targetImage.src = "./assets/wood1.jpg";
 
 var targetImageStr = new Image();
-targetImageStr.src = "https://www.muralswallpaper.co.uk/app/uploads/log-cabin-texture%EF%BB%BF-plain-1-820x532.jpg";
+targetImageStr.src = "./assets/wood2.jpg";
 
 var strongestImage = new Image();
-strongestImage.src = "https://slm-assets3.secondlife.com/assets/10078618/view_large/Sales_Watermark_1.jpg?1406902413";
+strongestImage.src = "./assets/wood3.jpg";
 var brick = {
     x: width / 2 - 60,
     y: height - 40,
@@ -110,10 +110,10 @@ var numberBonusesUp;
 var nrTargetsDestroyed = 0;
 
 function level1() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -167,10 +167,10 @@ function level1() {
 }
 
 function level2() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -255,10 +255,10 @@ function level2() {
 }
 
 function level3() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -376,10 +376,10 @@ function level3() {
 }
 
 function level4() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -447,10 +447,10 @@ function level4() {
 }
 
 function level5() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -613,10 +613,10 @@ function level5() {
 }
 
 function level6() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -747,10 +747,10 @@ function level6() {
 }
 
 function level7() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -830,10 +830,10 @@ function level7() {
 }
 
 function level8() {
-    while(bonusUp.length !== 0){
+    while (bonusUp.length !== 0) {
         bonusUp.pop();
     }
-    while(bonusDown.length !== 0){
+    while (bonusDown.length !== 0) {
         bonusDown.pop();
     }
     for (var j = 0; j < bonusUpObjectArr.length; j++) {
@@ -1004,7 +1004,7 @@ function nextLevel() {
 function gameOver() {
     canvas.style.visibility = "hidden";
     startGame.style.visibility = "hidden";
-    gameOverVar.style.display = "block";
+    gameOverVar.style.display = "flex";
 }
 
 function random(max) {
@@ -1015,10 +1015,10 @@ var bonusUp = [];
 var bonusDown = [];
 
 var bonusUpImage = new Image();
-bonusUpImage.src = 'https://www.freeiconspng.com/uploads/plus-sign-icon-15.png';
+bonusUpImage.src = './assets/plus.png';
 var bonusUpObjectArr = [];
 var bonusDownImage = new Image();
-bonusDownImage.src = 'https://png.icons8.com/metro/1600/delete-sign.png';
+bonusDownImage.src = './assets/x.png';
 var bonusDownObjectArr = [];
 var timer = 59;
 
